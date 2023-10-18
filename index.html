@@ -1,80 +1,124 @@
+
+
 <!DOCTYPE html>
 <html>
+    
 <head>
-<style>
-.button-container {
-  display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  height: 10vh; /* Define a altura da área de visualização */
+    <meta charset="UTF-8">
+    <title>Document</title>
+  <input type="number" id="input1" placeholder="Altura">
+  <input type="number" id="input2" placeholder=" peso">
+  <button onclick="add()">Calcular</button>
+
+  <p id="result"></p>
+
+  <script>/* const Enput = document.querySelector('input1');
+    const Enput2 = document.querySelector('input2');
+     */
+    /* 
+    var paragrafo = document.querySelector('p');
+    paragrafo.innerHTML += `<p>${imc}
+    </p>`
+     */
+    /*
+    const Enput = document.querySelector("input1");
+    const Enput2 = document.querySelector('input2');
+    function Add () {
+      parseInt(Enput)
+      parseInt(Enput2)
+      const imc =  Enput + Enput2;
+      console.log(`${imc}`)
+    var paragrafo = document.querySelector('p');
+    paragrafo.innerHTML += `${imc} `;
+    }
+     */
+    /* const Enput = document.querySelector("input1");
+    const Enput2 = document.querySelector('input2');
+         function add() {
+                const input1 = document.querySelector(".input1").value;
+                const input2 = document.querySelector(".input2").value;
+                const number1 = parseInt(input1);
+                const number2 = parseInt(input2);
+                const sum = number1 + number2;
+                console.log(sum);
+    document.getElementById("result").innerText = sum;
+            }
+         */
+    /*             var paragrafo = document.querySelector("p");
+     */
+    /*             paragrafo.innerHTML += `${sum} `;
+     */
+    
+    function add() {
+      const input1 = document.querySelector("#input1").value;
+      const input2 = document.querySelector("#input2").value;
+    
+      const number1 = parseFloat(input1);
+      const number2 = parseFloat(input2);
+    
+      const sum = number2 / number1 ** 2;
+     
+    Math.round(sum)
+    
+      console.log(`${sum}`);
+    
+      document.getElementById("result").innerText = sum.toFixed(1);
+    }
+    </script>
+
+    <style>
+        body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
 }
 
-.button {
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
   text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
+  color: #00ff00; /* Verde neon */
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #2e2e2e;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
+  border-radius: 5px;
+  color: #ffffff;
 }
 
-.button:hover {
-  background-color: #3e8e41;
+button {
+  display: block;
+  width: calc(100%);
+  padding: 10px;
+  background-color: #00ff00;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-
-
+button:hover {
+  background-color: #00cc00; /* Verde neon mais escuro */
 }
 
-body{
-    background-color: aqua;
-
+.result {
+  text-align: center;
+  color: #00ff00;
 }
-</style>
-</head>
-<body>
 
-<div class="button-container">
-  <button class="button">Lorem ipsum dolor sit amet.</button>
-</div>
-
-
-
-
-
-
-<div class="button-container">
-    <button class="button">Lorem ipsum dolor sit amet.</button>
-  </div>
-  
-
-
-
-
-  <div class="button-container">
-    <button class="button">Lorem ipsum dolor sit amet.</button>
-  </div>
-  
-
-
-
-
-
-
-  <div class="button-container">
-    <button class="button">Lorem ipsum dolor sit amet.</button>
-  </div>
-  
-
-
+      
+      </style>
 </body>
 </html>
+
